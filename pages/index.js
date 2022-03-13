@@ -11,8 +11,8 @@ export default function Home() {
         <meta name="description" content="App that displays pretty colors to learn Next!" />
       </Head>
       {colors.map(color => (
-        <Link href={`/${color.name}`}>
-        <h2 key={color.id}>{color.name}</h2>
+        <Link href={`/${color.name}`} key={color.id}>
+        <h2>{color.name}</h2>
         </Link>
       ))}
     </div>
