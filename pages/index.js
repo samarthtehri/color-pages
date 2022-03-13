@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       {colors.map(color => (
         <Link href={`/${color.name}`}>
-        <h2>{color.name}</h2>
+        <h2 key={color.id}>{color.name}</h2>
         </Link>
       ))}
     </div>
